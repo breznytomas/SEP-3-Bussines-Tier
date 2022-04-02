@@ -1,0 +1,15 @@
+query {
+  listingsByVehicle(licenseNo: \"%s\"){
+    id
+    listedDate
+    price
+    location
+    dateFrom
+    dateTo
+    vehicle {
+      brand
+      model
+      licenseNo
+    }
+  }
+}

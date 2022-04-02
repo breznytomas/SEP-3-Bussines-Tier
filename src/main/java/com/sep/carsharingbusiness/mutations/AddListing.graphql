@@ -1,0 +1,19 @@
+mutation {
+  addListing(input: {
+    price: %s
+    listedDate: \"%s\"
+    location: \"%s\"
+    dateFrom: \"%s\"
+    dateTo: \"%s\"
+    vehicle: {
+        licenseNo: \"%s\"
+    }
+  })  {
+    id
+    price
+    location
+    vehicle {
+      licenseNo
+    }
+  }
+}

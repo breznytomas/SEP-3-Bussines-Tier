@@ -1,0 +1,26 @@
+query {
+  listingById(id: %s) {
+    id
+    price
+    location
+    listedDate
+    dateTo
+    dateFrom
+    vehicle{
+      licenseNo
+      brand
+      model
+      manufactureYear
+      mileage
+      transmission
+      type
+      fuelType
+      seats
+      owner {
+        firstName
+        lastName
+        phoneNo
+      }
+    }
+  }
+}

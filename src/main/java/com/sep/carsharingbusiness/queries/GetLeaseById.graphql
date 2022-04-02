@@ -1,0 +1,19 @@
+query{
+  lease(id: %s) {
+    id
+    leasedFrom
+    leasedTo
+    canceled
+    totalPrice
+    listing {
+      id
+      location
+    }
+    customer {
+      cpr
+      firstName
+      lastName
+      phoneNo
+    }
+  }
+}

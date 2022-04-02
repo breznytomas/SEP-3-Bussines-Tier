@@ -1,0 +1,14 @@
+mutation {
+  updateCustomer(customer: {
+      cpr: \"%s\"
+      firstName: \"%s\"
+      lastName: \"%s\"
+      phoneNo: \"%s\"
+  })
+  {
+    cpr
+    firstName
+    lastName
+    phoneNo
+  }
+}

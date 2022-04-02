@@ -1,0 +1,17 @@
+query {
+	vehicle(licenseNo: \"%s\") {
+        licenseNo
+        brand
+        model
+        manufactureYear
+        seats
+        mileage
+        fuelType
+        transmission
+        type
+        isApproved
+        owner {
+            cpr
+        }
+	}
+}

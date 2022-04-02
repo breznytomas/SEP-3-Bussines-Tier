@@ -1,0 +1,20 @@
+query {
+  vehiclesByApprovalStatus(isApproved: %s) {
+    licenseNo
+    brand
+    model
+    manufactureYear
+    transmission
+    type
+    fuelType
+    seats
+    mileage
+    isApproved
+    owner {
+      cpr
+      phoneNo
+      firstName
+      lastName
+    }
+  }
+}

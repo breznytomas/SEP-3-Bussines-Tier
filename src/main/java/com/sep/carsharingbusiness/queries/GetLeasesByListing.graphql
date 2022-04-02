@@ -1,0 +1,24 @@
+query {
+  leasesByListing(listingId: %s) {
+    id
+    leasedFrom
+    leasedTo
+    canceled
+    totalPrice
+    listing {
+      id
+      price
+      location
+      vehicle {
+        licenseNo
+        brand
+        model
+      }
+    }
+    customer {
+      firstName
+      lastName
+      phoneNo
+    }
+  }
+}

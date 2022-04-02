@@ -1,0 +1,20 @@
+mutation {
+  updateListing(input: {
+    id: %s
+    price: %s
+    location: \"%s\"
+    dateFrom: \"%s\"
+    dateTo: \"%s\"
+    vehicle: {
+      licenseNo: \"%s\"
+    }
+  })
+  {
+    id
+    price
+    location
+    vehicle {
+      licenseNo
+    }
+  }
+}

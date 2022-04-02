@@ -1,0 +1,6 @@
+query {
+  coupon(code: \"%s\") {
+    code
+    discount
+  }
+}

@@ -1,0 +1,27 @@
+query {
+  leasesByCustomer(cpr: \"%s\") {
+    id
+    leasedFrom
+    leasedTo
+    canceled
+    totalPrice
+    listing {
+      id
+      price
+      location
+      vehicle {
+        licenseNo
+        brand
+        model
+        owner {
+          firstName
+          lastName
+          phoneNo
+        }
+      }
+    }
+    customer {
+      cpr
+    }
+  }
+}

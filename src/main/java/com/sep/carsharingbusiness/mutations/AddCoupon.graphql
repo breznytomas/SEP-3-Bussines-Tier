@@ -1,0 +1,10 @@
+mutation {
+  addCoupon(coupon: {
+    code: \"%s\"
+    discount: %s
+  })
+  {
+    code
+    discount
+  }
+}

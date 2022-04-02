@@ -1,0 +1,3 @@
+mutation {
+  removeLease(id: %s)
+}

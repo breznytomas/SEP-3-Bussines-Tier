@@ -1,0 +1,8 @@
+query {
+  customer (cpr: \"%s\") {
+    cpr
+    firstName
+    lastName
+    phoneNo
+  }
+}
